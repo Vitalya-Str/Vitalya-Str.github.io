@@ -9,21 +9,24 @@
   }
 }
 
-@import "fonts.scss";
+@import "fonts";
+@import "normalize";
+@import "header";
+
 $fontFamily: "Roboto";
 
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,regular,500,700&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,regular,500,700,900&display=swap&subset=cyrillic-ext");
 
-$minWidth: 320px;
-$maxWidth: 1400px;
-$maxWidthContainer: 1140px;
+$minWidth: 320;
+$maxWidth: 1400;
+$maxWidthContainer: 1140;
 $md1: $maxWidthContainer + 12;
 $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
 
 ._container {
-  min-width: $maxWidthContainer + px;
+  max-width: $maxWidthContainer + px;
   margin: 0 auto;
   padding: 0 20px;
 }
