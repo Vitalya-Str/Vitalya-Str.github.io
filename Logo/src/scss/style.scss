@@ -20,10 +20,15 @@ $md4: 479.98;
 @import "normalize";
 @import "header";
 
-$fontFamily: "Roboto";
-
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,regular,500,700,900&display=swap&subset=cyrillic-ext");
 
+$fontFamily: "Roboto";
+
+body {
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  font-size: 14px;
+}
 ._container {
   max-width: $maxWidthContainer + px;
   margin: 0 auto;
