@@ -131,6 +131,11 @@ a {
     padding-top: 25px;
   }
 }
+@media (max-width: 767.98px) {
+  .top-header__column_logo {
+    flex: 0 0 100px;
+  }
+}
 .top-header__logo {
   position: relative;
   z-index: 3;
@@ -156,6 +161,7 @@ a {
     height: 100%;
     left: 0;
     top: 0;
+    visibility: hidden;
     overflow: auto;
     display: none;
     background-color: #fff;
@@ -183,6 +189,7 @@ a {
   .menu__body._active {
     display: block;
     z-index: 2;
+    visibility: visible;
   }
 }
 .menu__list {
