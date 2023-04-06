@@ -3,9 +3,10 @@
   height: 120px;
 
   &__btn {
-    background: none;
+    background-color: transparent;
     border: 0;
     padding: 0;
+    cursor: pointer;
   }
 }
 .inner {
@@ -18,14 +19,14 @@
   padding-left: 30px;
   &__list {
     display: flex;
-    @extend %font-montserrat;
-    line-height: 22px;
   }
   &__list-item + .menu__list-item {
     padding-left: 80px;
   }
   &__list-link {
+    @extend %font-montserrat;
     color: rgba(54, 56, 56, 0.9033);
+    line-height: 22px;
   }
 }
 
