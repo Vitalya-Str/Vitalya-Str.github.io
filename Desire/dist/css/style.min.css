@@ -53,6 +53,11 @@ a {
   text-decoration: none;
 }
 
+.contact__title, .menu__list-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
 html,
 body {
   height: 100%;
@@ -63,11 +68,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 27px;
-}
-
-.menu__list-link {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
 }
 
 .wrapper {
@@ -124,4 +124,92 @@ body {
 
 .logo {
   margin: 0 auto;
+}
+
+.footer__top {
+  background-color: #dfdfdf;
+  height: 342px;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0 80px 0;
+}
+.footer__bot {
+  height: 110px;
+  background-color: #363838;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bot__text {
+  padding: 42px 10px;
+  color: #a1a1a1;
+}
+
+.contact {
+  max-width: 540px;
+}
+.contact__title {
+  color: #363838;
+  line-height: 23px;
+  margin-bottom: 14px;
+}
+.contact__text {
+  color: #5a5a5a;
+  max-width: 476px;
+  margin-bottom: 16px;
+}
+.contact__mail {
+  display: inline-block;
+  font-weight: 600;
+  color: #363838;
+  font-size: 14px;
+  margin-bottom: 22px;
+  padding-left: 30px;
+  position: relative;
+}
+.contact__mail::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/mail.png);
+  left: 0;
+  top: 8px;
+  height: 12px;
+  width: 16px;
+}
+.search__input {
+  border-radius: 20px;
+  border: 1px solid rgba(38, 36, 36, 0.7);
+  width: 368px;
+  height: 40px;
+  background-color: #dfdfdf;
+}
+.search__input::placeholder {
+  padding-left: 10px;
+}
+.search__btn {
+  border-radius: 20px;
+  width: 160px;
+  height: 40px;
+  padding: 6px 12px;
+  background-color: #363838;
+  color: #fffff0;
+  cursor: pointer;
+}
+
+.social__list {
+  margin-bottom: 15px;
+  padding-left: 30px;
+}
+.social__link {
+  color: #707070;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.info__menu-list {
+  margin-bottom: 15px;
 }
