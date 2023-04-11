@@ -53,7 +53,7 @@ a {
   text-decoration: none;
 }
 
-.contact__title, .menu__list-link {
+.contact__title, .rightside-menu__title, .menu__list-link {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
@@ -67,7 +67,10 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  color: #5A5A5A;
   line-height: 27px;
+  overflow-x: hidden;
+  min-width: 320px;
 }
 
 .wrapper {
@@ -126,6 +129,47 @@ body {
   margin: 0 auto;
 }
 
+.rightside-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  max-width: 695px;
+  width: 100%;
+  padding-top: 40px;
+  box-shadow: inset 3px -2px 10px 0;
+  transition: all 0.5s;
+}
+.rightside-menu.rightside-menu--close {
+  transform: translateX(500%);
+}
+.rightside-menu__close {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  margin-bottom: 60px;
+  padding-left: 50px;
+}
+.rightside-menu__content {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 485px;
+}
+.rightside-menu__logo {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+.rightside-menu__title {
+  color: #363838;
+  font-size: 36px;
+  line-height: 51px;
+  margin-bottom: 17px;
+}
+.rightside-menu__text {
+  margin-bottom: 75px;
+}
 .footer__top {
   background-color: #dfdfdf;
   height: 342px;
@@ -248,6 +292,9 @@ body {
   height: 12px;
 }
 
+.info__menu {
+  padding: 0 90px 0 15px;
+}
 .info__menu-list {
   margin-bottom: 15px;
 }
