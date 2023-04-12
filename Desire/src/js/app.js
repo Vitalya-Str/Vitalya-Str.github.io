@@ -1,15 +1,18 @@
-import Swiper from "swiper";
+// core version + navigation, pagination modules:
+import Swiper, { Navigation, Pagination } from "swiper";
 
+// configure Swiper to use modules
+Swiper.use([Navigation, Pagination]);
+
+// init Swiper:
 const swiper = new Swiper(".swiper", {
-
   loop: true,
 
-  // If we need pagination
   pagination: {
     el: ".swiper-pagination",
+    
   },
 });
-
 
 const headerBtn = document.querySelector(".header__btn");
 const rightsideMenu = document.querySelector(".rightside-menu");
@@ -22,5 +25,3 @@ headerBtn.addEventListener("click", function () {
 rightsideMenuClose.addEventListener("click", function () {
   rightsideMenu.classList.add("rightside-menu--close");
 });
-
-
