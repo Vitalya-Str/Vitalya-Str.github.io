@@ -184,6 +184,10 @@ body {
 .rightside-menu__text {
   margin-bottom: 75px;
 }
+.swiper {
+  height: 1225px;
+}
+
 .footer__top {
   background-color: #dfdfdf;
   height: 342px;
