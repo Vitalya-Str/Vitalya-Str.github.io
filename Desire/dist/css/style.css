@@ -53,7 +53,7 @@ a {
   text-decoration: none;
 }
 
-.contact__title, .content__title, .rightside-menu__title, .menu__list-link {
+.contact__title, .box-images__text-title, .new-collection__title, .content__title, .rightside-menu__title, .menu__list-link {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
@@ -89,6 +89,12 @@ body {
 
 .container {
   max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container__fluid {
+  max-width: 1920px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -220,9 +226,90 @@ body {
   left: 0;
   width: 185px;
   height: 1px;
-  background: #6D7278;
+  background: #6d7278;
   border: 1px solid #979797;
 }
+.new-collection__info {
+  text-align: center;
+  max-width: 730px;
+  margin: 0 auto;
+}
+.new-collection__title {
+  color: #363838;
+  font-size: 36px;
+  line-height: 51px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  position: relative;
+}
+.new-collection__title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  width: 250px;
+  margin: 0 auto;
+  background: #6d7278;
+  border: 1px solid #979797;
+}
+.new-collection__text {
+  margin-bottom: 30px;
+}
+.new-collection__box-images {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 25px;
+}
+
+.box-images__item {
+  position: relative;
+  margin-bottom: 100px;
+}
+.box-images__item:hover .box-images__text {
+  opacity: 1;
+}
+.box-images__img {
+  object-fit: cover;
+  max-width: 350px;
+}
+.box-images__text {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.7);
+  transition: all 0.5s;
+  opacity: 0;
+}
+.box-images__text-title {
+  color: #363838;
+  font-size: 20px;
+  line-height: 25px;
+  padding-bottom: 19px;
+  margin-bottom: 19px;
+  padding-top: 35%;
+  position: relative;
+}
+.box-images__text-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  width: 200px;
+  margin: 0 auto;
+  background: #6d7278;
+  border: 1px solid #979797;
+}
+.box-images__text-text {
+  color: #707070;
+}
+
 .footer__top {
   background-color: #dfdfdf;
   height: 342px;

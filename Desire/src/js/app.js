@@ -7,10 +7,10 @@ Swiper.use([Navigation, Pagination]);
 // init Swiper:
 const swiper = new Swiper(".swiper", {
   loop: true,
-
+  slidesPerView: 1,
+  autoplay: true,
   pagination: {
     el: ".swiper-pagination",
-    
   },
 });
 
