@@ -121,7 +121,7 @@
     bottom: 0;
     right: 0;
     background: rgba(#ffffff, 0.7);
-    transition: all .5s;
+    transition: all 0.5s;
     opacity: 0;
   }
   &__text-title {
@@ -150,3 +150,37 @@
     color: #707070;
   }
 }
+
+// ? ----------------------------------
+
+.drinking {
+  background-image: url(../img/drinking-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  &__box {
+    padding: 170px 0 155px 0;
+    max-width: 530px;
+  }
+  &__title {
+    @extend %font-title;
+    color: $title;
+    font-size: 60px;
+    line-height: 80px;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 1px;
+      width: 200px;
+      background: #6d7278;
+      border: 1px solid #979797;
+    }
+  }
+}
+
+// ?-----------------------------------
+

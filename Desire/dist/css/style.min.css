@@ -53,7 +53,7 @@ a {
   text-decoration: none;
 }
 
-.contact__title, .box-images__text-title, .new-collection__title, .content__title, .rightside-menu__title, .menu__list-link {
+.contact__title, .drinking__title, .box-images__text-title, .new-collection__title, .content__title, .rightside-menu__title, .menu__list-link {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
@@ -308,6 +308,34 @@ body {
 }
 .box-images__text-text {
   color: #707070;
+}
+
+.drinking {
+  background-image: url(../img/drinking-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.drinking__box {
+  padding: 170px 0 155px 0;
+  max-width: 530px;
+}
+.drinking__title {
+  color: #363838;
+  font-size: 60px;
+  line-height: 80px;
+  padding-bottom: 22px;
+  margin-bottom: 22px;
+  position: relative;
+}
+.drinking__title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 200px;
+  background: #6d7278;
+  border: 1px solid #979797;
 }
 
 .footer__top {
