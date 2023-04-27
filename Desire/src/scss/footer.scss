@@ -67,9 +67,10 @@
     border: 1px solid rgba(38, 36, 36, 0.7);
     width: 368px;
     height: 40px;
+    padding: 6px 20px 6px 20px;
     background-color: #dfdfdf;
     &::placeholder {
-      padding-left: 10px;
+      padding-left: 5px;
     }
   }
   &__btn {
