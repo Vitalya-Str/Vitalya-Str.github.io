@@ -184,3 +184,93 @@
 
 // ?-----------------------------------
 
+.work {
+  &__title {
+    text-align: center;
+    color: $title;
+    @extend %font-title;
+    font-size: 36px;
+    line-height: 51px;
+    padding: 80px 0 40px 0;
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 38px;
+    margin-bottom: 38px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0 auto;
+      height: 2px;
+      background: rgba(#363838, 0.7);
+    }
+  }
+  &__box--content {
+    max-width: 240px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &__box--desiner {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -42px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50px;
+      background: rgba(#363838, 1);
+    }
+  }
+  &__box--production {
+    margin-right: 280px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -38px;
+      width: 2px;
+      height: 20px;
+      background: rgba(#363838, 0.7);
+    }
+  }
+  &__box--measurements {
+    margin-left: 310px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -38px;
+      width: 2px;
+      height: 20px;
+      background: rgba(#363838, 0.7);
+    }
+  }
+}
+
+.box {
+  &__images {
+    margin-right: 10px;
+  }
+  &__title {
+    color: $title;
+    @extend %font-title;
+    font-size: 16px;
+    line-height: 23px;
+  }
+  &__text {
+    margin-top: 15px;
+  }
+  &__text--production {
+    margin-top: -50px;
+  }
+}

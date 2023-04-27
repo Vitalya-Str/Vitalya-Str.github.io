@@ -53,7 +53,7 @@ a {
   text-decoration: none;
 }
 
-.contact__title, .drinking__title, .box-images__text-title, .new-collection__title, .content__title, .rightside-menu__title, .menu__list-link {
+.contact__title, .box__title, .work__title, .drinking__title, .box-images__text-title, .new-collection__title, .content__title, .rightside-menu__title, .menu__list-link {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
@@ -336,6 +336,91 @@ body {
   width: 200px;
   background: #6d7278;
   border: 1px solid #979797;
+}
+
+.work__title {
+  text-align: center;
+  color: #363838;
+  font-size: 36px;
+  line-height: 51px;
+  padding: 80px 0 40px 0;
+}
+.work__box {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 38px;
+  margin-bottom: 38px;
+  position: relative;
+}
+.work__box::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  height: 2px;
+  background: rgba(54, 56, 56, 0.7);
+}
+.work__box--content {
+  max-width: 240px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.work__box--desiner {
+  position: relative;
+}
+.work__box--desiner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -42px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background: #363838;
+}
+.work__box--production {
+  margin-right: 280px;
+  position: relative;
+}
+.work__box--production::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -38px;
+  width: 2px;
+  height: 20px;
+  background: rgba(54, 56, 56, 0.7);
+}
+.work__box--measurements {
+  margin-left: 310px;
+  position: relative;
+}
+.work__box--measurements::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -38px;
+  width: 2px;
+  height: 20px;
+  background: rgba(54, 56, 56, 0.7);
+}
+
+.box__images {
+  margin-right: 10px;
+}
+.box__title {
+  color: #363838;
+  font-size: 16px;
+  line-height: 23px;
+}
+.box__text {
+  margin-top: 15px;
+}
+.box__text--production {
+  margin-top: -50px;
 }
 
 .footer__top {
