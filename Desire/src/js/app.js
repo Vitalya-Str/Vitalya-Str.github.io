@@ -1,10 +1,9 @@
-// core version + navigation, pagination modules:
+import mixitup from "mixitup";
+
 import Swiper, { Navigation, Pagination } from "swiper";
 
-// configure Swiper to use modules
 Swiper.use([Navigation, Pagination]);
 
-// init Swiper:
 const swiper = new Swiper(".swiper", {
   loop: true,
   slidesPerView: 1,

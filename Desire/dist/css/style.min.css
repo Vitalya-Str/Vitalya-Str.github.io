@@ -53,7 +53,7 @@ a {
   text-decoration: none;
 }
 
-.contact__title, .box__title, .work__title, .drinking__title, .box-images__text-title, .new-collection__title, .content__title, .rightside-menu__title, .menu__list-link {
+.contact__title, .content--blog__title, .inspirasion__title, .box__title, .work__title, .drinking__title, .box-images__text-title, .new-collection__title, .content__title, .rightside-menu__title, .menu__list-link {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
@@ -272,7 +272,7 @@ body {
 }
 .box-images__img {
   object-fit: cover;
-  max-width: 350px;
+  max-width: 100%;
 }
 .box-images__text {
   position: absolute;
@@ -338,6 +338,9 @@ body {
   border: 1px solid #979797;
 }
 
+.work {
+  margin-bottom: 100px;
+}
 .work__title {
   text-align: center;
   color: #363838;
@@ -423,6 +426,54 @@ body {
   margin-top: -50px;
 }
 
+.inspirasion__title {
+  text-align: center;
+  color: #363838;
+  font-size: 36px;
+  line-height: 51px;
+  max-width: 430px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.inspirasion__content {
+  display: flex;
+}
+.inspirasion__content--blog {
+  margin-right: 30px;
+  max-width: 540px;
+}
+.inspirasion__content--blog:last-child {
+  margin-right: 0;
+}
+
+.content--blog__img {
+  margin-bottom: 20px;
+}
+.content--blog__text {
+  display: flex;
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+.content--blog__date {
+  padding-right: 3px;
+}
+.content--blog__afthor {
+  padding: 0 3px;
+}
+.content--blog__afthor--name {
+  color: #5A5A5A;
+}
+.content--blog__decor {
+  padding-left: 3px;
+}
+.content--blog__title {
+  color: #363838;
+  font-size: 24px;
+  line-height: 38px;
+  margin-bottom: 100px;
+}
+
 .footer__top {
   background-color: #dfdfdf;
   height: 342px;
@@ -481,13 +532,14 @@ body {
   border: 1px solid rgba(38, 36, 36, 0.7);
   width: 368px;
   height: 40px;
-  padding: 6px 20px 6px 20px;
+  padding: 6px 18px 6px 18px;
   background-color: #dfdfdf;
 }
 .search__input::placeholder {
   padding-left: 5px;
 }
 .search__btn {
+  border: none;
   border-radius: 20px;
   width: 160px;
   height: 40px;
@@ -535,7 +587,7 @@ body {
 }
 .list__social-whatsApp::after {
   content: "";
-  background-image: url(../img/whatsApp.svg);
+  background-image: url(../img/whatsapp.svg);
   width: 14px;
   height: 14px;
 }

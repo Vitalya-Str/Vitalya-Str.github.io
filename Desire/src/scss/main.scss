@@ -111,7 +111,7 @@
   }
   &__img {
     object-fit: cover;
-    max-width: 350px;
+    max-width: 100%;
   }
   &__text {
     position: absolute;
@@ -185,6 +185,7 @@
 // ?-----------------------------------
 
 .work {
+  margin-bottom: 100px;
   &__title {
     text-align: center;
     color: $title;
@@ -274,3 +275,64 @@
     margin-top: -50px;
   }
 }
+
+// ?---------------------------
+
+
+
+// ?---------------------------
+
+.inspirasion {
+  &__title {
+    text-align: center;
+    color: $title;
+    @extend %font-title;
+    font-size: 36px;
+    line-height: 51px;
+    max-width: 430px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  &__content {
+    display: flex;
+  }
+  &__content--blog {
+    margin-right: 30px;
+    max-width: 540px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.content--blog {
+  &__img {
+    margin-bottom: 20px;
+  }
+  &__text {
+    display: flex;
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+  &__date {
+    padding-right: 3px;
+  }
+  &__afthor {
+    padding: 0 3px;
+  }
+  &__afthor--name {
+    color: $default;
+  }
+  &__decor {
+    padding-left: 3px;
+  }
+  &__title {
+    color: $title;
+    @extend %font-title;
+    font-size: 24px;
+    line-height: 38px;
+    margin-bottom: 100px;
+  }
+}
+// ?----------------------------
