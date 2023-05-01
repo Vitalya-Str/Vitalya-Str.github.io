@@ -1,5 +1,7 @@
 import mixitup from "mixitup";
 
+var mixer = mixitup(".mixitup__box");
+
 import Swiper, { Navigation, Pagination } from "swiper";
 
 Swiper.use([Navigation, Pagination]);

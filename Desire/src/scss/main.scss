@@ -278,7 +278,43 @@
 
 // ?---------------------------
 
-
+.container {
+  &__mixitup {
+  }
+  
+}
+.button {
+  &__box {
+  }
+}
+.mixitup {
+  &__btn {
+  }
+  &__box {
+    
+    
+  }
+}
+.category {
+  &__img {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr ;
+  }
+  &__img--item {
+  }
+}
+.mix {
+}
+.bedroom-furniture {
+}
+.living-room-furniture {
+}
+.office-furniture {
+}
+.dining-room-futniture {
+}
+.chair {
+}
 
 // ?---------------------------
 
