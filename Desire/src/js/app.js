@@ -1,6 +1,10 @@
 import mixitup from "mixitup";
 
-var mixer = mixitup(".mixitup__box");
+var mixer = mixitup(".mixitup__box", {
+  load: {
+    filter: ".living-room-furniture",
+  },
+});
 
 import Swiper, { Navigation, Pagination } from "swiper";
 
